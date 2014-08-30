@@ -1,0 +1,407 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\HLQY.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\HLQY.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HLQY_DIALOG DIALOGEX 0, 0, 286, 171
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体"
+BEGIN
+    CONTROL         132,IDC_STATIC,"Static",SS_BITMAP,13,81,43,47
+    CONTROL         131,IDC_STATIC,"Static",SS_BITMAP,0,7,299,57
+    LTEXT           "账      号：",IDC_STATIC_NAME,64,85,53,8
+    LTEXT           "密      码：",IDC_STATIC,64,109,53,8
+    EDITTEXT        IDC_E_UID,127,83,115,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_PWD,127,107,115,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "注册",IDC_BTN_ZHUCE,127,133,50,15
+    PUSHBUTTON      "登录",IDC_BTN_DENGLU,191,133,50,15
+END
+
+IDD_MAIN_DIALOG DIALOG DISCARDABLE  0, 0, 457, 312
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Quick Download"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "个人中心",IDC_BTN_CENTER,5,3,50,45
+    EDITTEXT        IDC_EDIT1,75,14,243,25,ES_AUTOHSCROLL
+    PUSHBUTTON      "搜索",IDC_BTN_SOUSUO,322,15,44,25
+    LTEXT           "我的下载",IDC_STATIC,15,73,53,8
+    LTEXT           "我的上传",IDC_STATIC,15,154,50,8
+    PUSHBUTTON      "已下载",IDC_BTN_YIXIAZAI,5,95,50,14
+    PUSHBUTTON      "下载中",IDC_BTN_XIAZAIZHONG,5,119,50,14
+    PUSHBUTTON      "已上传",IDC_BTN_YISHANGCHUAN,5,177,50,14
+    PUSHBUTTON      "上传中",IDC_BTN_SHANGCHUANZHONG,5,199,50,14
+    CONTROL         129,IDC_STATIC,"Static",SS_BITMAP,385,14,45,33
+    CONTROL         130,IDC_STATIC,"Static",SS_BITMAP,115,119,217,31
+END
+
+IDD_DOING_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "下载中：",IDC_STATIC_DOWN,15,17,46,8,SS_NOTIFY
+    PUSHBUTTON      "新建",IDC_BTN_NEW,60,14,50,14
+    PUSHBUTTON      "开始",IDC_BTN_START,127,14,50,14
+    PUSHBUTTON      "删除",IDC_BTN_CANCEL,194,14,50,14
+    PUSHBUTTON      "返回",IDC_BTN_BACK,261,14,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,40,313,160
+END
+
+IDD_DONE_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "已下载：",IDC_STATIC,8,21,63,8
+    PUSHBUTTON      "打开",IDC_OPEN,73,21,50,14
+    PUSHBUTTON      "返回",IDC_BTN_BACK,149,21,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,38,313,159
+END
+
+IDD_LOGIN_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "昵       称：",IDC_STATIC,59,44,54,8
+    LTEXT           "密       码：",IDC_STATIC,59,70,54,8
+    LTEXT           "确认密码：",IDC_STATIC,59,96,54,8
+    EDITTEXT        IDC_E_UID,129,39,103,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_PWD1,129,69,103,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_PWD2,129,95,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "注册",IDC_BTN_ZHUCE,129,132,50,14
+    PUSHBUTTON      "返回",IDC_BTN_BACK,182,132,50,14
+END
+
+IDD_NO_DIALOG DIALOG DISCARDABLE  0, 0, 196, 128
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "温馨提示"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "对不起，两次密码不一致，请返回重试",IDC_STATIC,28,36,
+                    134,8
+    PUSHBUTTON      "返回",IDC_BTN_BACK,68,70,50,14
+END
+
+IDD_UP_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "已上传：",IDC_STATIC,11,19,65,8
+    PUSHBUTTON      "打开",IDC_BTN_DAKAI,83,17,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,38,313,156
+END
+
+IDD_UPING_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "上传中：",IDC_STATIC,15,21,58,8
+    PUSHBUTTON      "新建",IDC_BTN_NEW,89,18,50,14
+    PUSHBUTTON      "开始",IDC_BTN_START,167,18,50,14
+    PUSHBUTTON      "暂停",IDC_BTN_STOP,244,18,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,48,320,146
+END
+
+IDD_SS_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "搜索结果如下：",IDC_STATIC,7,20,81,8
+    PUSHBUTTON      "Q D 一下",IDC_BTN_DOWN,115,19,50,14
+    PUSHBUTTON      "返回",IDC_BTN_BACK,194,19,50,14
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,47,306,147
+END
+
+IDD_PERSON_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,26,19,58,47
+    LTEXT           "头像",IDC_STATIC,40,76,16,8
+    LTEXT           "账号：",IDC_STATIC,109,51,67,8
+    LTEXT           "真实姓名：",IDC_STATIC,109,73,67,8
+    LTEXT           "邮箱：",IDC_STATIC,109,95,67,8
+    LTEXT           "下载总量：",IDC_STATIC,109,117,67,8
+    LTEXT           "上传总量：",IDC_STATIC,109,139,67,8
+    LTEXT           "昵称：",IDC_STATIC,109,29,67,8
+    PUSHBUTTON      "修改资料",IDC_BTN_XIUGAI,241,101,50,14
+    PUSHBUTTON      "返  回",IDC_BTN_BACK,242,135,50,14
+END
+
+IDD_ZILIAO_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "昵        称：",IDC_STATIC,64,33,55,8
+    LTEXT           "真实姓名：",IDC_STATIC,64,62,55,8
+    LTEXT           "密        码：",IDC_STATIC,64,91,55,8
+    LTEXT           "邮        箱：",IDC_STATIC,64,120,55,8
+    EDITTEXT        IDC_EDIT1,135,31,87,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,135,60,87,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,135,89,87,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,135,118,87,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "保存",IDC_BTN_BAOCUN,135,148,35,14
+    PUSHBUTTON      "返回",IDC_BTN_BACK,187,148,35,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HLQY Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HLQY\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HLQY.EXE\0"
+            VALUE "ProductName", "HLQY 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_HLQY_DIALOG, DIALOG
+    BEGIN
+        TOPMARGIN, 7
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 456
+        BOTTOMMARGIN, 305
+    END
+
+    IDD_DOING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DONE_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 313
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_NO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+
+    IDD_UP_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 313
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_UPING_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_SS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_PERSON_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_ZILIAO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\你要的.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\10000393176352_副本.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\100009481047006.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\100004461335575.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_CURSOR2             CURSOR  DISCARDABLE     "res\\cursor2.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\HLQY.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
